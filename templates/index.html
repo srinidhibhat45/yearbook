@@ -1,0 +1,76 @@
+{% extends 'template.html' %}
+{% block title %} Home {% endblock title %}
+{% block body %}
+
+<div id="main">
+    <div id="left">....</div>
+    <div id="content">
+        <div class="d-flex flex-justify-around flex-wrap">
+            <p
+                style="color:rgb(97, 88, 88); font-weight:bold; font-family: sans-serif; font-size:60px; padding-top:50px">
+                Sushiksha Yearbook</p>
+        </div>
+
+        <div style="float:right; padding-right:24px;" class="widget-search widget">
+            <form id="search" class="widget-search__form form-inline my-2 my-lg-0" role="search" method="GET">
+                <label>
+                    <input style="width:300px; box-shadow: 1px 1px 2px black" id="search-input"
+                        class="widget-search__field form-control mr-sm-2" name="query" type="text"
+                        placeholder="Search..." value="" name="s" aria-label="Search...">
+                </label>
+                <button class="btn btn-secondary my-2 my-sm-0 widget-search__submit" type="submit"
+                    value="search">Search</button>
+            </form>
+        </div>
+        <div style="height:70px;"></div>
+        <div class="d-flex flex-justify-around flex-wrap">
+
+
+
+            <div
+                class="hover-grow height-full border rounded-1 box-shadow-medium bg-white mb-4 m-1 position-relative">
+                <a class="no-underline text-gray-dark" href="https://i.ibb.co/r0qV7PW/sophists-logo.png" target="_blank"
+                    rel="nofollow noopener">
+                    <div class="p-3 d-flex flex-column student">
+                        <img src="https://i.ibb.co/r0qV7PW/sophists-logo.png" class="width-fit lazy" alt="@nekkunj" width="272"
+                            height="272">
+                        <h4 class="h4-mktg text-mono pt-3 pb-2">
+                            Tejas
+                        </h4>
+                        <div class="flex-auto">
+                            <h4 style="font-family: 'Comfortaa', cursive; font-size: 30px" class="h4-mktg">
+                               Srinidhi Bhat</h4>
+                            <p class="f4" style="height:48px;">Goa College of Engineering, Goa</p>
+                        </div>
+                        <div class="bg-blue-light p-3 rounded-1 width-full quote">
+                            <p class="f5 css-truncate"
+                                style="text-overflow: ellipsis; overflow-wrap: anywhere; overflow: hidden; height: 60px;">
+                                If you don't find your Wings, look for your fins.
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            {{ end }}
+        </div>
+
+        <div style="height: 100px; width: 100px;">
+
+        </div>
+
+        <!-- <div
+            class="d-flex flex-justify-around flex-wrap pagination-lg .page-item:first-child .page-link  .page-item:last-child">
+        </div> -->
+
+
+    </div>
+
+
+    <div id="right">.....</div>
+    <div style="clear:both"></div>
+    <div style="height: 30px; width: 100px;">
+
+    </div>
+</div>
+
+{% endblock body %}
