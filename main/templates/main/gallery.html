@@ -12,8 +12,6 @@
   <link rel="stylesheet" href="/css/styles.css?h=d41d8cd98f00b204e9800998ecf8427e">
 
 
-
-
   <title>Gallery | Yearbook</title>
 
 </head>
@@ -25,7 +23,7 @@
     style="height:80px;background-color:#37434d;color:#ffffff;">
     <div class="container-fluid"><img src="https://i.ibb.co/r0qV7PW/sophists-logo.png"
         style="opacity: 1;height: 72px"><a class="navbar-brand" style="opacity: 1;color: #ffffff;font-size: 30px;"
-        href="/">&nbsp;<b>Sophists Yearbook</b></a>
+        href=" {% url 'home' %}">&nbsp;<b>Sophists Yearbook</b></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -34,17 +32,17 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link active" style="color: #ffffff;font-size: 20px;" href="/"><i class="fas fa-book"
-                style="font-size: 20px;"></i>&nbsp;Yearbook&nbsp;&nbsp;&nbsp;</a>
+            <a class="nav-link active" style="color: #ffffff;font-size: 20px;" href=" {% url 'home' %}"><i
+                class="fas fa-book" style="font-size: 20px;"></i>&nbsp;Yearbook&nbsp;&nbsp;&nbsp;</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" style="color: #ffffff;font-size: 20px;" href="/about"><i
+            <a class="nav-link" style="color: #ffffff;font-size: 20px;" href=" {% url 'about' %}"><i
                 class="far fa-comment"></i>&nbsp;About&nbsp;&nbsp;&nbsp;</a>
           </li>
-          <li class="nav-item"><a class="nav-link" href="/gallery" style="color: #ffffff;font-size: 20px;" href="#"><i
-                class="fas fa-images"></i>&nbsp;Gallery&nbsp;&nbsp;&nbsp;</a>
+          <li class="nav-item"><a class="nav-link" href=" {% url 'gallery' %}" style="color: #ffffff;font-size: 20px;"
+              href="#"><i class="fas fa-images"></i>&nbsp;Gallery&nbsp;&nbsp;&nbsp;</a>
           </li>
-          <li class="nav-item"><a class="nav-link" href="/join" title="Only for Sophists Members"
+          <li class="nav-item"><a class="nav-link" href="{% url 'join' %}" title="Only for Sophists Members"
               style="color: #ffffff;font-size: 20px;"><i class="fas fa-plus"></i>&nbsp;Join&nbsp;&nbsp;&nbsp;</a>
           </li>
         </ul>
@@ -1153,7 +1151,7 @@
               layout: "sameSize",
               setupControls: !0
             }, 0 === arguments.length && (r = n.options), 1 === arguments.length && "object" == typeof arguments[
-            0] && (r = arguments[0]), r && n.setOptions(r), n.css({
+              0] && (r = arguments[0]), r && n.setOptions(r), n.css({
               padding: 0,
               position: "relative"
             }), n._lastCategory = 0, n._isAnimating = !1, n._isShuffling = !1, n._isSorting = !1, n._mainArray = n
@@ -1200,7 +1198,7 @@
         sort: function (t, i) {
           var r = this;
           if (t = t || "domIndex", i = i || "asc", r._isAnimating = !0, r._isSorting = !0, r.trigger(
-            "sortingStart"), "domIndex" !== t && "sortData" !== t && "w" !== t && "h" !== t)
+              "sortingStart"), "domIndex" !== t && "sortData" !== t && "w" !== t && "h" !== t)
             for (var n = 0; n < r._mainArray.length; n++) r._mainArray[n][t] = r._mainArray[n].data(t);
           r._mainArray.sort(r._comparator(t, i)), r._subArrays = r._makeSubarrays();
           var e = r._multifilterModeOn() ? r._makeMultifilterArray() : r._getCollectionByFilter(r.options.filter);
@@ -1598,7 +1596,7 @@
                   n.alertErrorMessage), j(1 == i || -1 == i ? i : 1)
               }), a.onload = function () {
                 void 0 !== i && d.eq(D).trigger(t.Event("changed.simplelightbox")).trigger(t.Event((1 === i ?
-                    "nextDone" : "prevDone") + ".simplelightbox")), n.history && w(), -1 == p.indexOf(l.attr(
+                  "nextDone" : "prevDone") + ".simplelightbox")), n.history && w(), -1 == p.indexOf(l.attr(
                   "src")) && p.push(l.attr("src"));
                 var r = a.width,
                   u = a.height;
@@ -1709,13 +1707,13 @@
               };
               n.animationSlide && (g ? W(n.animationSpeed / 1e3, -100 * e - o + "px") : a.left = parseInt(t(
                 ".sl-image").css("left")) + -100 * e + "px"), t(".sl-image").animate(a, n.animationSpeed,
-              function () {
-                setTimeout(function () {
-                  var i = d.eq(D);
-                  l.attr("src", i.attr(n.sourceAttr)), -1 == p.indexOf(i.attr(n.sourceAttr)) && S.show(), t(
-                    ".sl-caption").remove(), z(e), n.preloading && Y()
-                }, 100)
-              })
+                function () {
+                  setTimeout(function () {
+                    var i = d.eq(D);
+                    l.attr("src", i.attr(n.sourceAttr)), -1 == p.indexOf(i.attr(n.sourceAttr)) && S.show(), t(
+                      ".sl-caption").remove(), z(e), n.preloading && Y()
+                  }, 100)
+                })
             }
           },
           H = function () {

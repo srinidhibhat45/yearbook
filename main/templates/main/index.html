@@ -1,4 +1,4 @@
-{% extends 'template.html' %}
+{% extends 'main/template.html' %}
 {% block title %} Home {% endblock title %}
 {% block body %}
 
@@ -26,33 +26,36 @@
         <div class="d-flex flex-justify-around flex-wrap">
 
 
-
-            <div
-                class="hover-grow height-full border rounded-1 box-shadow-medium bg-white mb-4 m-1 position-relative">
-                <a class="no-underline text-gray-dark" href="https://i.ibb.co/r0qV7PW/sophists-logo.png" target="_blank"
+            {% for peeps in people %}
+            <div class="hover-grow height-full border rounded-1 box-shadow-medium bg-white mb-4 m-1 position-relative">
+                
+                <a class="no-underline text-gray-dark" href="{{ peeps.img }}" target="_blank"
                     rel="nofollow noopener">
                     <div class="p-3 d-flex flex-column student">
-                        <img src="https://i.ibb.co/r0qV7PW/sophists-logo.png" class="width-fit lazy" alt="@nekkunj" width="272"
-                            height="272">
+                        <img src="{{ peeps.img }}" class="width-fit lazy" alt="{{ peeps.name }}"
+                            width="272" height="272">
                         <h4 class="h4-mktg text-mono pt-3 pb-2">
-                            Tejas
+                            {{ peeps.team }}
                         </h4>
                         <div class="flex-auto">
                             <h4 style="font-family: 'Comfortaa', cursive; font-size: 30px" class="h4-mktg">
-                               Srinidhi Bhat</h4>
-                            <p class="f4" style="height:48px;">Goa College of Engineering, Goa</p>
+                                {{ peeps.name }}</h4>
+                            <p class="f4" style="height:48px;">{{ peeps.college }}</p>
                         </div>
                         <div class="bg-blue-light p-3 rounded-1 width-full quote">
                             <p class="f5 css-truncate"
                                 style="text-overflow: ellipsis; overflow-wrap: anywhere; overflow: hidden; height: 60px;">
-                                If you don't find your Wings, look for your fins.
+                                {{ peeps.quote }}
                             </p>
                         </div>
                     </div>
                 </a>
+                
             </div>
-            {{ end }}
+            {% endfor %}
         </div>
+        
+
 
         <div style="height: 100px; width: 100px;">
 
