@@ -34,6 +34,8 @@ ALLOWED_HOSTS = ['127.0.0.1', 'sushiksha-yearbook.herokuapp.com']
 
 INSTALLED_APPS = [
     'main.apps.MainConfig',
+    'users.apps.UsersConfig',
+    'crispy_forms',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -134,3 +136,5 @@ STATIC_DIRS = [
 ]
 
 django_heroku.settings(locals())
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'

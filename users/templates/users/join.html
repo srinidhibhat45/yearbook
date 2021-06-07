@@ -1,0 +1,31 @@
+{% extends 'main/template.html' %}
+{% load crispy_forms_tags %}
+{% block title %}Join {% endblock title %}
+{% block body %}
+
+<div style="height: 100px"></div>
+
+<div class="container p-3">
+    <div class="content-section">
+        <form method="POST">
+            {% csrf_token %}
+
+            <fieldset class="form-group">
+                <legend style="font-size: 45px" class="border-bottom mb-4">Join Today</legend>
+                {{ form|crispy }}
+            </fieldset>
+
+            <div class="form-group">
+                <button class="btn btn-outline-info btn-lg" type="submit">Sign Up</button>
+            </div>
+            <div class="border-top pt-3">
+                <small class="text-muted"> Already have an account? <a class="ml-2 link" href="#">Sign in</a></small>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div style="height: 100px"></div>
+
+
+{% endblock body %}

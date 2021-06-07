@@ -146,7 +146,3 @@ def about(request):
 
 def gallery(request):
     return render(request, 'main/gallery.html')
-
-
-def join(request):
-    return render(request, 'main/join.html')
