@@ -5,61 +5,103 @@
 <link rel="stylesheet" href="{% static 'users/css/profile.css' %}">
 <div style="height: 50px"></div>
 
-
-
+<h1 class="text-center">Profile </h1>
+<div class="container"><hr></div>
 <div class="container">
     <div class="row">
-        <div class="col-sm-1"></div>
-        <div class="col-sm-12">
+            <!-- Start: Profile Edit Form -->
+            <div class="container profile profile-view" id="profile">
+                <div class="row">
+                </div>
+                <form>
+                    <div class="form-row profile-row">
+                        <div class="col-md-6">
+                            
+                            <div class="form-row">
+                                <div class="col-sm-12 col-md-12">
+                                    <div class="form-group"><label><b>Name</b></label><input placeholder="{{ user.username }}" class="form-control" type="text" 
+                                            name="name"></div>
+                                </div>
+                                <div class="col-sm-12 col-md-12">
+                                    <div class="form-group"><label><b>Team</b></label><input placeholder="{{ user.profile.team }}" class="form-control" type="text"
+                                            name="team"></div>
+                                </div>
+                                <div class="col-sm-12 col-md-12">
+                                    <div class="form-group"><label><b>College / Organization</b></label><input placeholder="{{ user.profile.college }}" class="form-control" type="text"
+                                            name="college"></div>
+                                </div>
+                                <div class="col-sm-12 col-md-12">
+                                    <div class="form-group"><label><b>Your Quote</b></label><textarea placeholder="{{ user.profile.quote }}" class="form-control" type="text-field"
+                                            rows=5 name="quote"></textarea></div>
+                                </div>
+                            </div>
 
-          <!-- Start: Profile Edit Form -->
-    <div class="container profile profile-view" id="profile">
-      <div class="row">
-          <div class="col-md-12 alert-col relative">
-              <div class="alert alert-info alert-dismissible absolue center" role="alert"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button><span>Profile save with success</span></div>
-          </div>
-      </div>
-      <form>
-          <div class="form-row profile-row">
-              <div class="col-md-4 relative">
-                  <div class="avatar">
-                      <div class="avatar-bg align-center">
-                        <img style="max-height:250px; max-width:250px " src="{{user.profile.image.url}}" alt="">
-                      </div>
-                  </div><input class="form-control-file form-control" type="file" name="avatar-file">
-              </div>
-              <div class="col-md-8">
-                  <h1>Profile </h1>
-                  <hr>
-                  <div class="form-row">
-                      <div class="col-sm-12 col-md-6">
-                          <div class="form-group"><label>Firstname </label><input class="form-control" type="text" name="firstname"></div>
-                      </div>
-                      <div class="col-sm-12 col-md-6">
-                          <div class="form-group"><label>Lastname </label><input class="form-control" type="text" name="lastname"></div>
-                      </div>
-                  </div>
-                  <div class="form-group"><label>Email </label><input class="form-control" type="email" autocomplete="off" required="" name="email"></div>
-                  <div class="form-row">
-                      <div class="col-sm-12 col-md-6">
-                          <div class="form-group"><label>Password </label><input class="form-control" type="password" name="password" autocomplete="off" required=""></div>
-                      </div>
-                      <div class="col-sm-12 col-md-6">
-                          <div class="form-group"><label>Confirm Password</label><input class="form-control" type="password" name="confirmpass" autocomplete="off" required=""></div>
-                      </div>
-                  </div>
-                  <hr>
-                  <div class="form-row">
-                      <div style="float:right" class="col-md-5">
-                      <button class="btn btn-primary p-2" type="submit">SAVE </button>
-                      <button class="btn btn-danger p-2" type="reset">CANCEL </button></div>
-                  </div>
-              </div>
-          </div>
-      </form>
-  </div><!-- End: Profile Edit Form -->
+                            <div class="form-group"><label><b>Email</b></label><input placeholder="{{ user.email }}" class="form-control" type="email"
+                                    autocomplete="on" required="" name="email"></div>
+
+
+                            <div class="form-row">
+                                <div class="col-sm-12 col-md-6">
+                                    <div class="form-group"><label><b>Password</b></label><input class="form-control"
+                                            type="password" name="password" autocompleste="off" required=""></div>
+                                </div>
+
+
+                                <div class="col-sm-12 col-md-6">
+                                    <div class="form-group"><label><b>Confirm Password</b></label><input class="form-control"
+                                            type="password" name="confirmpass" autocomplete="off" required=""></div>
+                                </div>
+
+
+                                <div>
+                                    <label><b>Profile Picture</b></label>
+                                    <input class="form-control-file form-control" type="file" name="avatar-file">
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="form-row">
+                                <div style="float:right" class="col-md-5">
+                                    <button class="btn btn-primary btn-block" type="submit">Save Profile</button>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <h4 class="text-center">Your card will look like this:</h4>
+                            <div class="d-flex flex-justify-around flex-wrap">
+
+                                <div
+                                    class="hover-grow height-full border rounded-1 box-shadow-medium bg-white mb-4 m-1 position-relative">
+                            
+                                    <a class="no-underline text-gray-dark" href="{{ user.profile.image.url }}" target="_blank"
+                                        rel="nofollow noopener">
+                                        <div class="p-3 d-flex flex-column student">
+                                            <img src="{{ user.profile.image.url }}" class="width-fit lazy" alt="{{ peeps.name }}" width="272"
+                                                height="272">
+                                            <h4 class="h4-mktg text-mono pt-3 pb-2">
+                                                {{ user.profile.team }}
+                                            </h4>
+                                            <div class="flex-auto">
+                                                <h4 style="font-family: 'Comfortaa', cursive; font-size: 30px" class="h4-mktg">
+                                                    {{ user.username }}</h4>
+                                                <p class="f4" style="height:48px;">{{ user.profile.college }}</p>
+                                            </div>
+                                            <div class="bg-blue-light p-3 rounded-1 width-full quote">
+                                                <p class="f5 css-truncate"
+                                                    style="text-overflow: ellipsis; overflow-wrap: anywhere; overflow: hidden; height: 60px;">
+                                                    {{ user.profile.quote }}
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </a>
+                            
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div><!-- End: Profile Edit Form -->
         </div>
-        <div class="col-sm-1"></div>
     </div>
 </div>
 
