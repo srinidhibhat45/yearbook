@@ -17,21 +17,24 @@
 
 <div class="container">
     <div class="row">
-        <div class="col-md-3">
+        <div class="col-md-2.5">
             <div class="card">
-                <div style="font-size: 40px" class="card-header">
+                <div style="font-size: 40px" class="card-header text-center">
                     Tags
                 </div>
                 <ul class="list-group list-group-flush">
-                    <li class="list-group-item">
-                        <a style="color:black" href="{% url 'gallery' %}">All</a>
-                    </li>
+
+                    <a href="{% url 'gallery' %}">
+                        <li style="color:black" class="list-group-item list-group-item-action text-center">All</li>
+                    </a>
 
                     {% for category in categories %}
-                    <li class="list-group-item">
-                        <a style="color:black"
-                            href="{% url 'gallery' %}?category={{ category.name }}">{{ category.name }}</a>
-                    </li>
+
+                    <a href="{% url 'gallery' %}?category={{ category.name }}">
+                        <li style="color:black" class="list-group-item list-group-item-action text-center">
+                            {{ category.name }}</li>
+                    </a>
+
                     {% endfor %}
 
                     <li class="list-group-item">
@@ -41,7 +44,7 @@
                 </ul>
             </div>
         </div>
-        <div class="col-md-9">
+        <div class="col-md-10">
             <div class="row">
                 {% for photo in photos %}
                 <div class="col-md-4">
