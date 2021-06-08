@@ -1,0 +1,64 @@
+{% extends 'main/template.html' %}
+{% load static %}
+{% block title %}Add a Photo {% endblock title %}
+
+{% block body %}
+
+<div class="m-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <a class="btn btn-dark my-3" href="{% url 'gallery' %}"><svg xmlns="http://www.w3.org/2000/svg"
+                        width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
+                    </svg> Go Back</a>
+
+                <div class="card">
+
+
+                    <form method="POST" enctype="multipart/form-data">
+
+                        {% csrf_token %}
+
+
+                        <div class="form-group m-3">
+                            <label>Description</label>
+                            <input required name="description" type="text" placeholder="Enter a Description"
+                                class="form-control">
+                        </div>
+
+                        <div class="form-group m-3">
+                            <label>Select a Category</label>
+                            <select name="category" class="form-control">
+                                <option value="none">Select Category...</option>
+
+                                {% for category in categories %}
+
+                                <option value="{{ category.id }}">{{ category.name }}</option>
+
+                                {% endfor %}
+                            </select>
+                        </div>
+
+                        <div class="form-group m-3">
+                            <label>Create a new Category</label>
+                            <input name="category_new" type="text" placeholder="Enter a Category" class="form-control">
+                        </div>
+
+                        <div class="form-group m-3">
+                            <label>Upload Image</label>
+                            <input required name="image" type="file" class="form-control-file">
+                        </div>
+
+                        <button class="btn btn-primary m-3" type="submit">Submit</button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock body %}

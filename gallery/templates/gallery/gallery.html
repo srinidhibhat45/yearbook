@@ -1,0 +1,64 @@
+{% extends 'main/template.html' %}
+{% load static %}
+{% block title %}Gallery {% endblock title %}
+
+{% block body %}
+
+<style>
+    .image-thumbnail {
+        height: 200px;
+        object-fit: cover;
+    }
+</style>
+
+<h1 class="text-center"> GALLERY </h1>
+
+<div style="height: 30px"></div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <div class="card">
+                <div style="font-size: 40px" class="card-header">
+                    Tags
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <a style="color:black" href="{% url 'gallery' %}">All</a>
+                    </li>
+
+                    {% for category in categories %}
+                    <li class="list-group-item">
+                        <a style="color:black"
+                            href="{% url 'gallery' %}?category={{ category.name }}">{{ category.name }}</a>
+                    </li>
+                    {% endfor %}
+
+                    <li class="list-group-item">
+                        <a class="btn btn-dark btn-block" href="{% url 'add' %}">Add Photo &nbsp; <i
+                                class="fas fa-plus"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-9">
+            <div class="row">
+                {% for photo in photos %}
+                <div class="col-md-4">
+                    <div class="card my-2">
+                        <img src="{{ photo.image.url }}" class="image-thumbnail" alt="image">
+                        <div class="card-body">
+                            <p class="card-text">Tag: {{photo.category.name}}</p>
+                        </div>
+                        <a class="btn btn-outline-dark btn-sm m-1" href="{% url 'photo' photo.id %}">View</a>
+                    </div>
+                </div>
+                {% empty %}
+                <h3>No Photos... :(</h3>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+<div style="height: 130px; width: 100px;"></div>
+{% endblock body %}

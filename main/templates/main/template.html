@@ -52,24 +52,24 @@
     </nav>
 
 
-        {% if messages %}
+    {% if messages %}
 
-        {% for message in messages %}
+    {% for message in messages %}
 
-        <div class="alert alert-{{ message.tags }} alert-dismissible fade show" role="alert">
+    <div class="alert alert-{{ message.tags }} alert-dismissible fade show" role="alert">
 
-            {{ message }}
-            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-            </button>
+        {{ message }}
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
 
-        </div>
+    </div>
 
-        {% endfor %}
+    {% endfor %}
 
-        {% endif %}
+    {% endif %}
 
-
+    <div style="height: 30px"></div>
 
 
     {% block body %}
@@ -78,8 +78,9 @@
 
     {% endblock body %}
 
+    <div style="height: 100px"></div>
 
-    <footer id="footer">
+    <footer class="footer mt-auto py-3" id="footer">
         <div class="container pt-5 ">
             <div class="row">
                 <div class="col-md-3 col-sm-12 mb-3 text-center">
@@ -130,6 +131,7 @@
     <div style="font-family: Comfortaa " class="copyright">
         Created with ❤ by Sushiksha
     </div>
+
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>

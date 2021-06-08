@@ -1,0 +1,42 @@
+{% extends 'main/template.html' %}
+{% load static %}
+{% block title %}Photo {% endblock title %}
+
+{% block body %}
+
+<div class="container">
+
+    <div class="row justify-content-center">
+        <div class="col">
+            <a class="btn btn-dark my-3" href="{% url 'gallery' %}"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                    height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
+                </svg> Go Back</a>
+
+            <div class="container" style="height: 90vh;">
+                <img style="max-width:100%; max-height:100%" class="rounded mx-auto d-block" src="{{ photo.image.url }}"
+                    alt="{{ photo.image.url }}">
+
+                <br>
+                <hr>
+
+                <blockquote class="blockquote text-center">
+                    <h4 class="mb-0">{{ photo.description }}</>
+                </blockquote>
+
+                <hr>
+
+                <p></p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+{% endblock body %}
