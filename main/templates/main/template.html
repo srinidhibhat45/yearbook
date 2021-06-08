@@ -39,14 +39,37 @@
                         <a class="nav-link" style="color: #ffffff;font-size: 20px;" href=" {% url 'about' %}"><i
                                 class="far fa-comment"></i>&nbsp;About&nbsp;&nbsp;&nbsp;</a>
                     </li>
+                    {% if user.is_authenticated %}
                     <li class="nav-item"><a class="nav-link" href=" {% url 'gallery' %}"
-                            style="color: #ffffff;font-size: 20px;" href="#"><i
-                                class="fas fa-images"></i>&nbsp;Gallery&nbsp;&nbsp;&nbsp;</a>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="{% url 'join' %}" title="Only for Sophists Members"
                             style="color: #ffffff;font-size: 20px;"><i
-                                class="fas fa-plus"></i>&nbsp;Join&nbsp;&nbsp;&nbsp;</a>
+                                class="fas fa-images"></i>&nbsp;Gallery&nbsp;&nbsp;</a>
                     </li>
+
+                    <li class="nav-item"><a class="nav-link" href="{% url 'profile' %}"
+                            style="color: #ffffff;font-size: 20px;"><i
+                                class="far fa-address-card"></i>&nbsp;Profile&nbsp;&nbsp;&nbsp;</a>
+                    </li>
+
+                    <li class="nav-item"><a class="nav-link" href="{% url 'logout' %}"
+                            style="color: red;font-size: 20px;"><i
+                                class="fas fa-sign-out-alt"></i>&nbsp;Logout&nbsp;&nbsp;&nbsp;</a>
+                    </li>
+
+
+                    {% else %}
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" data-hover="dropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                            title="Only for Sophists Members" style="color: #ffffff;font-size: 20px;"><i
+                                class="fas fa-plus"></i>&nbsp;Join&nbsp;&nbsp;&nbsp;</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="{% url 'register' %}">Register</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="{% url 'login' %}">Login</a>
+                        </div>
+                    </li>
+                    {% endif %}
+
                 </ul>
             </div>
     </nav>
