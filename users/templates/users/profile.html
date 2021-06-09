@@ -19,7 +19,7 @@
                             
                             <div class="form-row">
                                 <div class="col-sm-12 col-md-12">
-                                    <div class="form-group"><label><b>Name</b></label><input placeholder="{{ user.username }}" class="form-control" type="text" 
+                                    <div class="form-group"><label><b>Name</b></label><input placeholder="{{ user.first_name }} {{ user.last_name }}" class="form-control" type="text" 
                                             name="name"></div>
                                 </div>
                                 <div class="col-sm-12 col-md-12">
@@ -83,8 +83,8 @@
                                             </h4>
                                             <div class="flex-auto">
                                                 <h4 style="font-family: 'Comfortaa', cursive; font-size: 30px" class="h4-mktg">
-                                                    {{ user.username }}</h4>
-                                                <p class="f4" style="height:48px;">{{ user.profile.college }}</p>
+                                                    {{ user.first_name }} {{ user.last_name }}</h4>
+                                                <p class="f4" style="height:48px;">{{ user.profile.college }} 🚩</p>
                                             </div>
                                             <div class="bg-blue-light p-3 rounded-1 width-full quote">
                                                 <p class="f5 css-truncate"
