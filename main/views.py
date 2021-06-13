@@ -12,126 +12,230 @@ people = [
         'quote': 'Do This and Do That, Life will follow with everything else. Be comfident and bold!!',
         'img': 'https://i.ibb.co/bB3kYw6/srinidhi-min.png'
     },
-     {
+    {
         'name': 'Shri',
         'college': 'Goa College of Engineering',
         'team': 'Tejas',
         'quote': 'Do This and Do That, Life will follow with everything else. Be comfident and bold!!',
         'img': 'https://i.ibb.co/bB3kYw6/srinidhi-min.png'
     },
-     {
+    {
         'name': 'Shri',
         'college': 'Goa College of Engineering',
         'team': 'Tejas',
         'quote': 'Do This and Do That, Life will follow with everything else. Be comfident and bold!!',
         'img': 'https://i.ibb.co/bB3kYw6/srinidhi-min.png'
     },
-     {
+    {
         'name': 'Shri',
         'college': 'Goa College of Engineering',
         'team': 'Tejas',
         'quote': 'Do This and Do That, Life will follow with everything else. Be comfident and bold!!',
         'img': 'https://i.ibb.co/bB3kYw6/srinidhi-min.png'
     },
-     {
+    {
         'name': 'Shri',
         'college': 'Goa College of Engineering',
         'team': 'Tejas',
         'quote': 'Do This and Do That, Life will follow with everything else. Be comfident and bold!!',
         'img': 'https://i.ibb.co/bB3kYw6/srinidhi-min.png'
     },
-     {
+    {
         'name': 'Shri',
         'college': 'Goa College of Engineering',
         'team': 'Tejas',
         'quote': 'Do This and Do That, Life will follow with everything else. Be comfident and bold!!',
         'img': 'https://i.ibb.co/bB3kYw6/srinidhi-min.png'
     },
-     {
+    {
         'name': 'Shri',
         'college': 'Goa College of Engineering',
         'team': 'Tejas',
         'quote': 'Do This and Do That, Life will follow with everything else. Be comfident and bold!!',
         'img': 'https://i.ibb.co/bB3kYw6/srinidhi-min.png'
     },
-     {
+    {
         'name': 'Shri',
         'college': 'Goa College of Engineering',
         'team': 'Tejas',
         'quote': 'Do This and Do That, Life will follow with everything else. Be comfident and bold!!',
         'img': 'https://i.ibb.co/bB3kYw6/srinidhi-min.png'
     },
-     {
+    {
         'name': 'Shri',
         'college': 'Goa College of Engineering',
         'team': 'Tejas',
         'quote': 'Do This and Do That, Life will follow with everything else. Be comfident and bold!!',
         'img': 'https://i.ibb.co/bB3kYw6/srinidhi-min.png'
     },
-     {
+    {
         'name': 'Shri',
         'college': 'Goa College of Engineering',
         'team': 'Tejas',
         'quote': 'Do This and Do That, Life will follow with everything else. Be comfident and bold!!',
         'img': 'https://i.ibb.co/bB3kYw6/srinidhi-min.png'
     },
-     {
+    {
         'name': 'Shri',
         'college': 'Goa College of Engineering',
         'team': 'Tejas',
         'quote': 'Do This and Do That, Life will follow with everything else. Be comfident and bold!!',
         'img': 'https://i.ibb.co/bB3kYw6/srinidhi-min.png'
     },
-     {
+    {
         'name': 'Shri',
         'college': 'Goa College of Engineering',
         'team': 'Tejas',
         'quote': 'Do This and Do That, Life will follow with everything else. Be comfident and bold!!',
         'img': 'https://i.ibb.co/bB3kYw6/srinidhi-min.png'
     },
-     {
+    {
         'name': 'Shri',
         'college': 'Goa College of Engineering',
         'team': 'Tejas',
         'quote': 'Do This and Do That, Life will follow with everything else. Be comfident and bold!!',
         'img': 'https://i.ibb.co/bB3kYw6/srinidhi-min.png'
     },
-     {
+    {
         'name': 'Shri',
         'college': 'Goa College of Engineering',
         'team': 'Tejas',
         'quote': 'Do This and Do That, Life will follow with everything else. Be comfident and bold!!',
         'img': 'https://i.ibb.co/bB3kYw6/srinidhi-min.png'
     },
-     {
+    {
         'name': 'Shri',
         'college': 'Goa College of Engineering',
         'team': 'Tejas',
         'quote': 'Do This and Do That, Life will follow with everything else. Be comfident and bold!!',
         'img': 'https://i.ibb.co/bB3kYw6/srinidhi-min.png'
     },
-     {
+    {
         'name': 'Shri',
         'college': 'Goa College of Engineering',
         'team': 'Tejas',
         'quote': 'Do This and Do That, Life will follow with everything else. Be comfident and bold!!',
         'img': 'https://i.ibb.co/bB3kYw6/srinidhi-min.png'
     },
-     {
+    {
         'name': 'Shri',
         'college': 'Goa College of Engineering',
         'team': 'Tejas',
         'quote': 'Do This and Do That, Life will follow with everything else. Be comfident and bold!!',
         'img': 'https://i.ibb.co/bB3kYw6/srinidhi-min.png'
     },
-     {
+    {
+        'name': 'Shri',
+        'college': 'Goa College of Engineering',
+        'team': 'Tejas',
+        'quote': 'Do This and Do That, Life will follow with everything else. Be comfident and bold!!',
+        'img': 'https://i.ibb.co/bB3kYw6/srinidhi-min.png'
+    },
+    {
+        'name': 'Shri',
+        'college': 'Goa College of Engineering',
+        'team': 'Tejas',
+        'quote': 'Do This and Do That, Life will follow with everything else. Be comfident and bold!!',
+        'img': 'https://i.ibb.co/bB3kYw6/srinidhi-min.png'
+    },
+    {
+        'name': 'Shri',
+        'college': 'Goa College of Engineering',
+        'team': 'Tejas',
+        'quote': 'Do This and Do That, Life will follow with everything else. Be comfident and bold!!',
+        'img': 'https://i.ibb.co/bB3kYw6/srinidhi-min.png'
+    },
+    {
+        'name': 'Shri',
+        'college': 'Goa College of Engineering',
+        'team': 'Tejas',
+        'quote': 'Do This and Do That, Life will follow with everything else. Be comfident and bold!!',
+        'img': 'https://i.ibb.co/bB3kYw6/srinidhi-min.png'
+    },
+    {
+        'name': 'Shri',
+        'college': 'Goa College of Engineering',
+        'team': 'Tejas',
+        'quote': 'Do This and Do That, Life will follow with everything else. Be comfident and bold!!',
+        'img': 'https://i.ibb.co/bB3kYw6/srinidhi-min.png'
+    },
+    {
+        'name': 'Shri',
+        'college': 'Goa College of Engineering',
+        'team': 'Tejas',
+        'quote': 'Do This and Do That, Life will follow with everything else. Be comfident and bold!!',
+        'img': 'https://i.ibb.co/bB3kYw6/srinidhi-min.png'
+    },
+    {
+        'name': 'Shri',
+        'college': 'Goa College of Engineering',
+        'team': 'Tejas',
+        'quote': 'Do This and Do That, Life will follow with everything else. Be comfident and bold!!',
+        'img': 'https://i.ibb.co/bB3kYw6/srinidhi-min.png'
+    },
+    {
+        'name': 'Shri',
+        'college': 'Goa College of Engineering',
+        'team': 'Tejas',
+        'quote': 'Do This and Do That, Life will follow with everything else. Be comfident and bold!!',
+        'img': 'https://i.ibb.co/bB3kYw6/srinidhi-min.png'
+    },
+    {
+        'name': 'Shri',
+        'college': 'Goa College of Engineering',
+        'team': 'Tejas',
+        'quote': 'Do This and Do That, Life will follow with everything else. Be comfident and bold!!',
+        'img': 'https://i.ibb.co/bB3kYw6/srinidhi-min.png'
+    },
+    {
+        'name': 'Shri',
+        'college': 'Goa College of Engineering',
+        'team': 'Tejas',
+        'quote': 'Do This and Do That, Life will follow with everything else. Be comfident and bold!!',
+        'img': 'https://i.ibb.co/bB3kYw6/srinidhi-min.png'
+    },
+    {
+        'name': 'Shri',
+        'college': 'Goa College of Engineering',
+        'team': 'Tejas',
+        'quote': 'Do This and Do That, Life will follow with everything else. Be comfident and bold!!',
+        'img': 'https://i.ibb.co/bB3kYw6/srinidhi-min.png'
+    },
+    {
+        'name': 'Shri',
+        'college': 'Goa College of Engineering',
+        'team': 'Tejas',
+        'quote': 'Do This and Do That, Life will follow with everything else. Be comfident and bold!!',
+        'img': 'https://i.ibb.co/bB3kYw6/srinidhi-min.png'
+    },
+    {
+        'name': 'Shri',
+        'college': 'Goa College of Engineering',
+        'team': 'Tejas',
+        'quote': 'Do This and Do That, Life will follow with everything else. Be comfident and bold!!',
+        'img': 'https://i.ibb.co/bB3kYw6/srinidhi-min.png'
+    },
+    {
+        'name': 'Shri',
+        'college': 'Goa College of Engineering',
+        'team': 'Tejas',
+        'quote': 'Do This and Do That, Life will follow with everything else. Be comfident and bold!!',
+        'img': 'https://i.ibb.co/bB3kYw6/srinidhi-min.png'
+    },
+    {
+        'name': 'Shri',
+        'college': 'Goa College of Engineering',
+        'team': 'Tejas',
+        'quote': 'Do This and Do That, Life will follow with everything else. Be comfident and bold!!',
+        'img': 'https://i.ibb.co/bB3kYw6/srinidhi-min.png'
+    },
+    {
         'name': 'Shri',
         'college': 'Goa College of Engineering',
         'team': 'Tejas',
         'quote': 'Do This and Do That, Life will follow with everything else. Be comfident and bold!!',
         'img': 'https://i.ibb.co/bB3kYw6/srinidhi-min.png'
     }
-
 ]
 
 

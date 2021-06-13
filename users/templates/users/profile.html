@@ -1,4 +1,5 @@
 {% extends 'main/template.html' %}
+{% load crispy_forms_tags %}
 {% load static %}
 {% block title %}Profile {% endblock title %}
 {% block body %}
@@ -12,8 +13,24 @@
             <!-- Start: Profile Edit Form -->
             <div class="container profile profile-view" id="profile">
                 <div class="row">
+
+                    <form method="POST" enctype="multipart/form-data">
+                        {% csrf_token %}
+
+                        <fieldset class="form-group">
+                            <legend style="font-size: 45px" class="border-bottom mb-4">Profile Information</legend>
+                            {{ u_form|crispy }}
+                            {{ p_form|crispy }}
+                        </fieldset>
+
+                        <div class="form-group">
+                            <button class="btn btn-outline-info btn-lg" type="submit">Update</button>
+                        </div>
+                    </form>
                 </div>
-                <form>
+
+
+                <form method="POST" enctype="multipart/form-data">
                     <div class="form-row profile-row">
                         <div class="col-md-6">
                             
@@ -67,7 +84,7 @@
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <h4 class="text-center">Your card will look like this:</h4>
+                            <h4 class="text-center">Your yearbook card will look like this:</h4>
                             <div class="d-flex flex-justify-around flex-wrap">
 
                                 <div
