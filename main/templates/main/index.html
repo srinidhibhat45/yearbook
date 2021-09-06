@@ -50,23 +50,23 @@
                     <div
                         class="hover-grow height-full border rounded-1 box-shadow-medium bg-white mb-4 m-1 position-relative">
 
-                        <a class="no-underline text-gray-dark" href="{{ peeps.img }}" target="_blank"
+                        <a class="no-underline text-gray-dark" href="{{ peeps.profile.image.url }}" target="_blank"
                             rel="nofollow noopener">
                             <div class="p-3 d-flex flex-column student">
-                                <img src="{{ peeps.img }}" class="width-fit lazy" alt="{{ peeps.name }}" width="272"
+                                <img src="{{ peeps.profile.image.url }}" class="width-fit lazy" alt="{{ peeps.profile.name }}" width="272"
                                     height="272">
                                 <h4 class="h4-mktg text-mono pt-3 pb-2">
-                                    {{ peeps.team }}
+                                    {{ peeps.profile.team }}
                                 </h4>
                                 <div class="flex-auto">
                                     <h4 style="font-family: 'Comfortaa', cursive; font-size: 30px" class="h4-mktg">
-                                        {{ peeps.name }}</h4>
-                                    <p class="f4" style="height:48px;">{{ peeps.college }}</p>
+                                        {{ peeps.profile.name }}</h4>
+                                    <p class="f4" style="height:48px;">{{ peeps.profile.college }}</p>
                                 </div>
                                 <div class="bg-blue-light p-3 rounded-1 width-full quote">
                                     <p class="f5 css-truncate"
                                         style="text-overflow: ellipsis; overflow-wrap: anywhere; overflow: hidden; height: 60px;">
-                                        {{ peeps.quote }}
+                                        {{ peeps.profile.quote }}
                                     </p>
                                 </div>
                             </div>

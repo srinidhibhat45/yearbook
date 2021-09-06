@@ -12,78 +12,16 @@
     <div class="row">
             <!-- Start: Profile Edit Form -->
             <div class="container profile profile-view" id="profile">
-                <div class="row">
-
+            <div class="row">
+                <div class="col-md-6">
                     <form method="POST" enctype="multipart/form-data">
-                        {% csrf_token %}
-
-                        <fieldset class="form-group">
-                            <legend style="font-size: 45px" class="border-bottom mb-4">Profile Information</legend>
-                            {{ u_form|crispy }}
-                            {{ p_form|crispy }}
-                        </fieldset>
-
-                        <div class="form-group">
-                            <button class="btn btn-outline-info btn-lg" type="submit">Update</button>
-                        </div>
+                    {% csrf_token %}
+                    {{ p_form|crispy }}
+                    {{u_form | crispy}}
+                        <button class="btn btn-primary btn-block" type="submit">Save Profile</button>
                     </form>
                 </div>
-
-
-                <form method="POST" enctype="multipart/form-data">
-                    <div class="form-row profile-row">
-                        <div class="col-md-6">
-                            
-                            <div class="form-row">
-                                <div class="col-sm-12 col-md-12">
-                                    <div class="form-group"><label><b>Name</b></label><input placeholder="{{ user.first_name }} {{ user.last_name }}" class="form-control" type="text" 
-                                            name="name"></div>
-                                </div>
-                                <div class="col-sm-12 col-md-12">
-                                    <div class="form-group"><label><b>Team</b></label><input placeholder="{{ user.profile.team }}" class="form-control" type="text"
-                                            name="team"></div>
-                                </div>
-                                <div class="col-sm-12 col-md-12">
-                                    <div class="form-group"><label><b>College / Organization</b></label><input placeholder="{{ user.profile.college }}" class="form-control" type="text"
-                                            name="college"></div>
-                                </div>
-                                <div class="col-sm-12 col-md-12">
-                                    <div class="form-group"><label><b>Your Quote</b></label><textarea placeholder="{{ user.profile.quote }}" class="form-control" type="text-field"
-                                            rows=5 name="quote"></textarea></div>
-                                </div>
-                            </div>
-
-                            <div class="form-group"><label><b>Email</b></label><input placeholder="{{ user.email }}" class="form-control" type="email"
-                                    autocomplete="on" required="" name="email"></div>
-
-
-                            <div class="form-row">
-                                <div class="col-sm-12 col-md-6">
-                                    <div class="form-group"><label><b>Password</b></label><input class="form-control"
-                                            type="password" name="password" autocompleste="off" required=""></div>
-                                </div>
-
-
-                                <div class="col-sm-12 col-md-6">
-                                    <div class="form-group"><label><b>Confirm Password</b></label><input class="form-control"
-                                            type="password" name="confirmpass" autocomplete="off" required=""></div>
-                                </div>
-
-
-                                <div>
-                                    <label><b>Profile Picture</b></label>
-                                    <input class="form-control-file form-control" type="file" name="avatar-file">
-                                </div>
-                            </div>
-                            <hr>
-                            <div class="form-row">
-                                <div style="float:right" class="col-md-5">
-                                    <button class="btn btn-primary btn-block" type="submit">Save Profile</button>
-                                   
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
+                <div class="col-md-6">
                             <h4 class="text-center">Your yearbook card will look like this:</h4>
                             <div class="d-flex flex-justify-around flex-wrap">
 
@@ -114,16 +52,17 @@
                             
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </form>
+                </div>
+            </div>
+                
+
             </div><!-- End: Profile Edit Form -->
         </div>
     </div>
 </div>
 
 
-
+                        
 
 <div style="height: 20px"></div>
 <script src="{% static 'users/js/profile.js' %}"></script>
