@@ -70,7 +70,7 @@
 
 1. Fork and Clone
     <ol>
-    <li>Fork the **Yearbook** Repository</li>
+    <li>Fork the <b>Yearbook</b> Repository</li>
     <li>Clone the repo to your local system.</li>
     </ol>
 
